@@ -6,7 +6,7 @@ Z = 1 - 2*X.^2-3*Y.^2;
 
 figure;
 h1 = surf(X, Y, Z);
-colormap(gca, parula);
+colormap(parula);
 shading interp;
 rotate(h1, [ 0 0 1], 78);
 xlabel('x'); ylabel('y'); zlabel('f(x,y)');
@@ -22,7 +22,7 @@ Z = sin(X.^2 + Y.^2);
 
 figure;
 h2 = surf(X, Y, Z);
-colormap(gca, hot);
+colormap(hot);
 shading interp;
 rotate(h2, [0 0 1], 45);
 xlabel('x'); ylabel('y'); zlabel('f(x,y)');
