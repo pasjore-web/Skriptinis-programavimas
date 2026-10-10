@@ -1,0 +1,19 @@
+%% papildoma 2 var
+clc; clear;
+
+x = input('Įveskite x: ');
+y = input('Įveskite y: ');
+
+for k = 1:20
+    m = ceil(rand * x);
+    n = ceil(rand * y);
+
+    A = zeros(x, y);
+    A(m, n) = NaN;
+
+    disp(['Iteracija ', num2str(k), ': m= ', num2str(m), ', n = ', num2str(n)])
+    disp(A)
+
+    pause(0.5);
+    clc
+end
