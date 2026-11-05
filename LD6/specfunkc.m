@@ -6,4 +6,4 @@ elseif nargin == 2
     else
     error('Reikia 1 arba 2 kintamuju');
 end
-end
+end 
